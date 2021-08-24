@@ -31,7 +31,7 @@ struct Bid {
     }
 };
 
-// FIXME (1): Internal structure for tree node
+// Internal structure for tree node
 struct Node {
     Bid bid;
     Node* left;
@@ -102,7 +102,7 @@ void BinarySearchTree::InOrder() {
  * Insert a bid
  */
 void BinarySearchTree::Insert(Bid bid) {
-    // FIXME (2a) Implement inserting a bid into the tree
+    // Implement inserting a bid into the tree
     
     // if there is no root
     if (root == nullptr) {
@@ -119,7 +119,7 @@ void BinarySearchTree::Insert(Bid bid) {
  * Remove a bid
  */
 void BinarySearchTree::Remove(string bidId) {
-    // FIXME (4a) Implement removing a bid from the tree
+    // Implement removing a bid from the tree
 
     // call recursive function removeNode
     this->removeNode(root, bidId);
@@ -129,7 +129,7 @@ void BinarySearchTree::Remove(string bidId) {
  * Search for a bid
  */
 Bid BinarySearchTree::Search(string bidId) {
-    // FIXME (3) Implement searching the tree for a bid
+    // Implement searching the tree for a bid
 
     // start searching from the root
     Node* current = root;
@@ -162,7 +162,7 @@ Bid BinarySearchTree::Search(string bidId) {
  * @param bid Bid to be added
  */
 void BinarySearchTree::addNode(Node* node, Bid bid) {
-    // FIXME (2b) Implement inserting a bid into the tree
+    // Implement inserting a bid into the tree
 
     // if node is large than the bid, add to the left subtree
     if (node->bid.bidId.compare(bid.bidId) > 0) {
